@@ -84,5 +84,39 @@
 			 ?>
 	</section>
 
+	<section>
+
+			<div class="container-fluid bg-primary text-white">
+				<div class="container">
+					<h1> Arreglos asociativo  - Associative array </h1>
+				</div>
+			</div> 
+			<!--Código PHP -->
+			<?php /* Arreglos asociativo  - Associative array */
+
+				$birthdays = [
+					'José' => '1990-04-18',
+					'Licia' => '2000-01-22',
+					'Ana' => '2008-04-12',
+					'Alessandra' => '2010-08-09'
+				];
+
+
+				echo '<div class="container-fluid text-white"> <h2>Fechas de cumpleaños</h2>';
+					echo 'Fechas <br>';
+					foreach ($birthdays as $date) {
+						echo "$date <br>";
+					}
+					
+					echo "Clave -----Valor <br>";
+					foreach ($birthdays as $key => $value) {
+						echo "$key => $value <br>";
+					}
+
+					print_r($birthdays); //Imprime el arreglo completo.
+
+				echo '</div>';
+			 ?>
+	</section>
 </body>
 </html>
